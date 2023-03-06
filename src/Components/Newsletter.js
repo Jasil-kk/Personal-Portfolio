@@ -9,7 +9,7 @@ useEffect(()=>{
     if (status === 'success') clearFields();
 },[status])
 
-const handleSubmit = () => {
+const handleSubmit = (e) => {
     e.preventDefault();
     email && 
     email.indexOf("@") > -1 &&
