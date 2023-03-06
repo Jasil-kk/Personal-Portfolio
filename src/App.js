@@ -6,10 +6,24 @@ import { Projects } from './Components/Projects';
 import { Footer } from './Components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Contact } from './Components/Contact';
-
+import { useEffect, useState } from 'react';
+import Loading from './Components/Loading/Loading';
 
 function App() {
+
+  const [loading, setLoading] = useState(false);
+
+useEffect(()=>{
+    setLoading(true)
+    setTimeout(()=>{
+        setLoading(false)
+    },1500)
+},[]);
+
   return (
+    <>
+    {loading ? <Loading/>
+     :
     <div className="App">
       <NavBar />
       <Banner />
@@ -18,6 +32,8 @@ function App() {
       <Contact />
       <Footer />
     </div>
+  }
+  </>
   );
 }
 

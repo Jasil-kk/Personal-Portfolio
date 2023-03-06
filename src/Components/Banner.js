@@ -68,11 +68,10 @@ export const Banner = () => {
                     {`Hi I'm Jasil`} <span className="wrap">a {text}</span>
                   </h1>
                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
+                    I am a front-end developer with a passion for creating
+                    beautiful, responsive, and user-friendly websites. My focus
+                    is on delivering high-quality code and exceptional user
+                    experiences that meet the needs of my clients.
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
